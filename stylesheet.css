@@ -60,6 +60,8 @@ p {
   border: none;
   outline: none;
   appearance: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .knap--primaer {
@@ -93,8 +95,16 @@ main {
   align-items: center;
   flex-direction: column;
   margin-bottom: var(--space-m);
+  position: relative;
 }
 
+
+.hero__knap {
+  position: absolute;
+  top: var(--space-s);
+  right: var(--space-s);
+  width: auto;
+}
 
 /* logo størrelse */
 .hero__logo {
@@ -182,7 +192,7 @@ main {
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--space-s);
+  gap: var(--space-m);
   flex: 1;
 }
 
@@ -194,6 +204,16 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+.form__row {
+  display: flex;
+  gap: var(--space-s);
+  justify-content: space-between;
+}
+
+.form__row .input {
+  width: 30%;
+  text-align: center;
 }
 
 

@@ -14,16 +14,17 @@
     <link rel="stylesheet" href="stylesheet.css">
 
 </head>
+
 <body>
     <main class="container">
-            <section class="hero">
-                <div class="hero__kort">
-                    <div class="hero__midt">
-                        <a class="knap knap--primaer" href="index.html">Log ind</a>
-                        <img class="hero__logo" src="images/primaer-logo.svg" alt="logo">
-            </section>
+        <section class="hero">
+            <div class="hero__kort">
+                <a class="knap knap--sekundaer hero__knap" href="index.html">Log ind</a>
+                <img class="hero__logo" src="images/primaer-logo.svg" alt="logo">
+            </div>
+        </section>
         <section class="sektion">
-            <h2 class="sektion__titel">Ny profil</h2>
+            <h2 class="login__titel">Ny profil</h2>
             <form class="form">
                 <div class="form__felt">
                     <label class="form__label" for="navn">Brugernavn</label>
@@ -39,13 +40,15 @@
                 </div>
                 <div class="form__felt">
                     <label class="form__label">Fødselsdag</label>
-                    <div class="form__gruppe">
+                    <div class="form__row">
                         <input class="input" type="number" placeholder="Dag">
                         <input class="input" type="number" placeholder="Måned">
                         <input class="input" type="number" placeholder="År">
                     </div>
                 </div>
-                <a class="knap knap--primaer" href="main.html">Opret profil</a>
+                <div class="form__bund">
+                    <a class="knap knap--primaer" href="main.html">Opret profil</a>
+                </div>
             </form>
         </section>
     </main>
