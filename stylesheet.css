@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   box-sizing: border-box;
 }
@@ -51,9 +51,15 @@ p {
 /* KNAP */
 /* simpel knap som bruges overalt */
 .knap {
-  padding: 14px 24px;
+  padding: 14px;
+  border-radius: 999px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-body);
+
   border: none;
-  border-radius: 40px;
+  outline: none;
+  appearance: none;
 }
 
 .knap--primaer {
@@ -61,37 +67,34 @@ p {
   color: white;
 }
 
+.knap--sekundaer {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+
+  padding: 0;
+  width: auto;
+  font-size: 14px;
+}
 
 /* LAYOUT */
 /* begrænser bredden så det ligner mobil */
 main {
-  max-width: 375px;
-  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   padding: var(--space-m);
-  background: white;
-  padding-bottom: 80px;
 }
-
 
 .hero__kort {
   background: var(--color-headerbg);
   padding: var(--space-l);
-  min-height: 260px;
+  min-height: 180px;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-/* logo venstre */
-.hero__top {
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* centrer titel */
-.hero__midt {
-  text-align: center;
-}
 
 /* logo størrelse */
 .hero__logo {
@@ -136,7 +139,17 @@ main {
   margin: 0;
   font-size: 14px;
 }
+/*login*/
+.login {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
+.login__titel {
+  text-align: center;
+  margin-bottom: var(--space-m);
+}
 
 /* GRID */
 /* bruges til foreslåede projekter */
@@ -166,10 +179,32 @@ main {
 .sektion {
   margin-top: var(--space-l);
 }
-
-.sektion__titel {
-  text-align: center;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  flex: 1;
 }
+
+.form__bund {
+  margin-top: auto;
+}
+
+.form__felt {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.input {
+  padding: 14px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: var(--font-body);
+  width: 100%;
+}
+
 .nav {
   position: fixed;
   bottom: 0;
