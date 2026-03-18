@@ -1,0 +1,197 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* DESIGN SYSTEM */
+:root {
+
+  /* farver */
+  --color-primary: #D52B1E;
+  --color-text: #010101;
+  --color-background: #FDFDFD;
+  --color-headerbg: #EDEDED;
+
+  /* spacing */
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+
+  /* radius */
+  --radius: 8px;
+
+  /* typografi */
+  --font-primary: "Myriad Pro", Arial, sans-serif;
+  --font-h2: 24px;
+  --font-h3: 20px;
+  --font-body: 18px;
+}
+
+/* GLOBALT */
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+h3 {
+  font-size: var(--font-h3);
+}
+
+p {
+  font-size: var(--font-body);
+}
+
+
+/* KNAP */
+/* simpel knap som bruges overalt */
+.knap {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 40px;
+}
+
+.knap--primaer {
+  background: var(--color-primary);
+  color: white;
+}
+
+
+/* LAYOUT */
+/* begrænser bredden så det ligner mobil */
+main {
+  max-width: 375px;
+  margin: auto;
+  padding: var(--space-m);
+  background: white;
+  padding-bottom: 80px;
+}
+
+
+.hero__kort {
+  background: var(--color-headerbg);
+  padding: var(--space-l);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* logo venstre */
+.hero__top {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* centrer titel */
+.hero__midt {
+  text-align: center;
+}
+
+/* logo størrelse */
+.hero__logo {
+  width: 56px;
+}
+.hero__kort .knap {
+  align-self: center;
+}
+
+/* KORT */
+/* bruges til alle projekter */
+.kort {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* selve billedet (grå placeholder nu) */
+.kort__billede {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #dcdbdb;
+  border-radius: var(--radius);
+}
+
+/* tekst ovenpå billedet */
+.kort__overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  color: var(--color-text)
+}
+
+.kort__titel {
+  margin: 0;
+}
+
+.kort__dag,
+.kort__tid {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* GRID */
+/* bruges til foreslåede projekter */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-m);
+}
+
+
+/* SCROLL */
+/* bruges til "dine projekter" */
+.scroll {
+  display: flex;
+  gap: var(--space-m);
+  overflow-x: auto;
+}
+
+.scroll .kort {
+  min-width: 45%;
+  flex-shrink: 0;
+}
+
+
+/* SEKTION */
+/* giver luft mellem sektioner */
+.sektion {
+  margin-top: var(--space-l);
+}
+
+.sektion__titel {
+  text-align: center;
+}
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 375px;
+  background: var(--color-headerbg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+/* ikon */
+.nav__item img {
+  width: 24px;
+  height: 24px;
+}
+
+/* aktiv */
+.nav__item--aktiv {
+  border-radius: 50%;
+  padding: 8px;
+}
