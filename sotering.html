@@ -18,50 +18,58 @@
 <body>
     <main class="container">
         <section class="hero">
-            <img class="hero__logo" src="images/logo.svg" alt="logo røde kors frivillig">
-            <h2 class="hero__titel">Sortering</h2>
+            <a href="main.html" class="nav__item">
+                <img src="images/icon-pil.svg" alt="pil tilbage icon">
+            </a>
+            <h2 class="login__titel">Sortering</h2>
+        </section>
+        <section class="vagt">
+            <img class="vagt__billede" src="images/sotering.webp" alt="sortering">
         </section>
         <section class="sektion">
-            <h2 class="sektion__titel">Om frivilligarbejdet</h2>
+            <p>Tirsdag kl. 13-15
+                <br>Røde Kors Genbrug, Odense
+                <br>2/5 tilmeldt
+            </p>
+            <h2 class="login__titel">Om vagten</h2>
             <p class="tekst">
-                Vores frivillige mødes ca. en gang om ugen i 3 timer, hvor fællesskabet bliver plejet i kaffepauserne,
-                imens vi sorterer tøj. Vi sorterer p.t. 4 dage om ugen.
-                Tøj der ikke bliver solgt via genbrugsbutikkerne bliver solgt til opkøbere, der videreformidler tøjet
-                til de steder i verden, hvor der brug for det.
+                Som frivillig i sortering hjælper du med at sortere tøj til genbrug.
+                Vi arbejder sammen i et socialt fællesskab, hvor der også er tid til pauser og kaffe.
             </p>
         </section>
-        <section class="sektion">
-            <div class="form">
-                <label class="form__label">Tilmeld</label>
-                <select class="input">
-                    <option>Vælg dag</option>
-                    <option>Mandag</option>
-                    <option>Tirsdag</option>
-                    <option>Onsdag</option>
-                </select>
-                <button class="knap knap--primaer">Tilmeld</button>
+        <section class="login">
+            <div class="form__bund">
+                <button class="knap knap--primaer"">Tilmeld vagt</button>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
 
+
     <footer>
 
-        <nav class="bund-navigation">
-            <a href="#" class="nav-item">
-                <img src="images/icon-kalender.svg" alt="Hjem">
+        <nav class="nav">
+
+            <a href="#" class="nav__item nav__item--aktiv">
+                <img src="images/icon-home.svg" alt="Hjem">
             </a>
-            <a href="#" class="nav-item">
-                <img src="images/icon-kalender.svg" alt="Aktiviteter">
+
+            <a href="#" class="nav__item">
+                <img src="images/icon-tilfoej.svg" alt="Tilføj">
             </a>
-            <a href="#" class="nav-item">
+
+            <a href="#" class="nav__item">
                 <img src="images/icon-kalender.svg" alt="Kalender">
             </a>
-            <a href="#" class="nav-item">
+
+            <a href="#" class="nav__item">
                 <img src="images/icon-profil.svg" alt="Profil">
             </a>
+
         </nav>
+
     </footer>
 </body>
+
 </html>

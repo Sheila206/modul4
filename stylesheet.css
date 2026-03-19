@@ -18,13 +18,15 @@
   --space-l: 24px;
 
   /* radius */
-  --radius: 8px;
+  --radius: 10px;
 
   /* typografi */
   --font-primary: "Myriad Pro", Arial, sans-serif;
   --font-h2: 24px;
   --font-h3: 20px;
   --font-body: 18px;
+
+  --nav-height: 60px;
 }
 
 /* GLOBALT */
@@ -57,7 +59,6 @@ p {
   width: 100%;
   text-align: center;
   font-size: var(--font-body);
-
   border: none;
   outline: none;
   appearance: none;
@@ -68,6 +69,7 @@ p {
 .knap--primaer {
   background: var(--color-primary);
   color: white;
+  font-weight: bold;
 }
 
 .knap--sekundaer {
@@ -86,6 +88,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: var(--space-m);
+  padding-bottom: calc(var(--nav-height) + 20px);
 }
 
 .hero__kort {
@@ -222,6 +225,17 @@ main {
   width: 30%;
   text-align: center;
 }
+/*billeder på undersider*/
+.vagt__billede {
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-right: -16px;
+  height: 35vh;
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
 
 .input {
@@ -240,6 +254,7 @@ main {
   width: 100%;
   max-width: 480px;
   background: var(--color-headerbg);
+  border-top: 1px solid #ccc;
   display: flex;
   justify-content: space-around;
   align-items: center;
