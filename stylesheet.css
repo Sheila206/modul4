@@ -35,7 +35,6 @@ body {
   color: var(--color-text);
   font-family: var(--font-primary);
   margin: 0;
-  padding-bottom: 80px;
 }
 
 h2 {
@@ -54,7 +53,7 @@ p {
 /* KNAP */
 /* simpel knap som bruges overalt */
 .knap {
-  padding: 14px;
+  padding: var(--space-m);
   border-radius: 10px;
   width: 100%;
   text-align: center;
@@ -88,7 +87,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: var(--space-m);
-  padding-bottom: calc(var(--nav-height) + 20px);
+  padding-bottom: calc(var(--nav-height) + var(--space-m));
 }
 
 .hero__kort {
@@ -138,9 +137,9 @@ main {
 /* tekst ovenpå billedet */
 .kort__overlay {
   position: absolute;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
+  bottom: var(--space-s);
+  left: var(--space-s);
+  right: var(--space-s);
   color: var(--color-text)
 }
 
@@ -171,7 +170,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-m);
-  padding: 0 var(--space-m);
 }
 
 
@@ -181,7 +179,6 @@ main {
   display: flex;
   gap: var(--space-m);
   overflow-x: auto;
-  padding: 0 var(--space-m);
 }
 
 .scroll .kort {
@@ -213,7 +210,7 @@ main {
 .form__felt {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-s);
 }
 .form__row {
   display: flex;
@@ -239,8 +236,8 @@ main {
 
 
 .input {
-  padding: 12px;
-  border-radius: 10px;
+  padding: var(--space-m);
+  border-radius: var(--radius);
   border: 1px solid #ccc;
   font-size: var(--font-body);
   width: 100%;
