@@ -164,11 +164,6 @@ main {
   flex-direction: column;
 }
 
-.login__titel {
-  text-align: center;
-  margin-bottom: var(--space-m);
-}
-
 /* GRID */
 /* bruges til foreslåede projekter */
 .grid {
