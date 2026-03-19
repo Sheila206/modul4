@@ -2,7 +2,6 @@
 <html lang="da">
 
 <head>
-
     <!-- Basic meta settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -12,22 +11,35 @@
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-
 </head>
 
+<!-- body -->
+
 <body>
+
     <main class="container">
-        <section class="profil-guest">
-            <h2 class="sektion__titel">Profil</h2>
-            <span class="icon icon--profil"></span>
-            <h3 class="sektion__titel">Du er ikke logget ind</h3>
-            <p class="sektion__titel">
-                Log ind for at se din profil, tilmeldinger og aktiviteter.
-            </p>
-            <div class="form__bund">
-                <a href="index.html" class="knap knap--primaer">Log ind</a>
+            <div class="hero__top">
+                <img class="hero__logo" src="images/logo.svg" alt="logo">
+                <span class="icon icon--indstillinger"></span>
             </div>
-            <a href="opretbruger.html" class="knap knap--sekundaer">Opret profil</a>
+        <section class="profil">
+            <h2 class="titel">Profil</h2>
+            <span class="icon icon--profil"></span>
+            <h3 class="sektion__titel">Sofie Hansen</h3>
+            <div class="profil__info">
+                <p><strong>Email:</strong> Sofiehansen@email.dk</p>
+                <p><strong>Fødselsdag</strong> 12. maj 2003</p>
+                <p><strong>Telefon:</strong> +45 12 34 56 78</p>
+            </div>
+            <div>
+                <a class="knap knap--sekundaer">Rediger profil</a>
+                <br>
+                <br>
+                <a class="knap knap--sekundaer">Indstillinger</a>
+            </div>
+            <div class="form__bund">
+                <a href="index.html" class="knap knap--primaer">Log ud</a>
+            </div>
         </section>
     </main>
 
@@ -50,4 +62,5 @@
         </nav>
     </footer>
 </body>
+
 </html>

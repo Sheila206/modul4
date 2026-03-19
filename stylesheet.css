@@ -283,6 +283,13 @@ main {
 .icon--filter {
   background-image: url('images/icon-filter.svg');
 }
+.icon--indstillinger {
+  background-image: url('images/icon-indstillinger.svg');
+}
+.icon--indstillinger {
+  width: 28px;
+  height: 28px;
+}
 
 
 /* aktiv nav */
@@ -294,22 +301,22 @@ main {
   opacity: 1;
 }
 /*Profil side*/
-.profil-guest .icon--profil {
-  width: 72px;
-  height: 72px;
-  margin: var(--space-l) auto;
-}
-.profil-guest {
+.profil {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: var(--space-m);
 }
-.profil-guest .form__bund {
-  width: 100%;
+
+.profil__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
 }
 
-.profil-guest .knap--sekundaer {
-  margin-top: var(--space-m);
+.profil .icon--profil {
+  width: 72px;
+  height: 72px;
+  margin: var(--space-l) auto;
 }
