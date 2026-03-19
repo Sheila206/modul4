@@ -33,6 +33,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-primary);
   margin: 0;
+  padding-bottom: 80px;
 }
 
 h2 {
