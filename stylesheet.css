@@ -55,7 +55,6 @@ p {
 .knap {
   padding: var(--space-m);
   border-radius: 10px;
-  width: 100%;
   text-align: center;
   font-size: var(--font-body);
   border: none;
@@ -69,15 +68,17 @@ p {
   background: var(--color-primary);
   color: white;
   font-weight: bold;
+  width: 100%;
 }
 
 .knap--sekundaer {
   background: transparent;
-  border: none;
+  border: 1px solid var(--color-primary);
   color: var(--color-primary);
-  padding: 0;
-  width: auto;
+  padding: var(--space-s) var(--space-m);
   font-size: 13px;
+  display: inline-block;
+  align-self: center;
 }
 
 /* LAYOUT */

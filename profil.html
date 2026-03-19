@@ -16,103 +16,42 @@
 </head>
 
 <body>
-    <section class="hero">
-        <div class="hero__kort">
+    <main class="container">
+        <section class="hero">
             <div class="hero__top">
                 <img class="hero__logo" src="images/logo.svg" alt="logo">
             </div>
-
-            <div class="hero__midt">
-                <h2 class="hero__titel">Hjælp til i genbrugsbutik</h2>
+        </section>
+        <!-- Kalender -->
+        <section class="sektion">
+            <h2 class="login__titel">Kalender</h2>
+        </section>
+        <section>
+            <h3 class="login__titel">Under opbygning</h3>
+            <p>Funktionen er under udvikling og vil være tilgængelig senere.</p>
+            <div class="form__bund">
+                <a href="main.html" class="knap knap--primaer">
+                    Tilbage til forsiden
+                </a>
             </div>
-            <button class="knap knap--primaer">Se mere</button>
-        </div>
-    </section>
-    <!-- dine projekter -->
-    <section class="sektion">
-        <h2 class="sektion__titel">Dine projekter</h2>
-        <div class="scroll">
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Sortering</h3>
-                    <p class="kort__dag">Mandag</p>
-                    <p class="kort__tid">10–13</p>
-                </div>
-            </a>
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Café</h3>
-                    <p class="kort__dag">Onsdag</p>
-                    <p class="kort__tid">18–21</p>
-                </div>
-            </a>
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Indsamling</h3>
-                    <p class="kort__dag">Søndag</p>
-                    <p class="kort__tid">09–14</p>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!-- forslået projker) -->
-    <section class="sektion">
-        <h2 class="sektion__titel">Foreslåede projekter</h2>
-        <div class="grid">
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Integrationscafé</h3>
-                    <p class="kort__dag">Tirsdag</p>
-                    <p class="kort__tid">17–20</p>
-                </div>
-            </a>
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Sortering</h3>
-                    <p class="kort__dag">Mandag</p>
-                    <p class="kort__tid">10–13</p>
-                </div>
-            </a>
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Café</h3>
-                    <p class="kort__dag">Onsdag</p>
-                    <p class="kort__tid">18–21</p>
-                </div>
-            </a>
-            <a href="#" class="kort">
-                <div class="kort__billede"></div>
-                <div class="kort__overlay">
-                    <h3 class="kort__titel">Indsamling</h3>
-                    <p class="kort__dag">Søndag</p>
-                    <p class="kort__tid">09–14</p>
-                </div>
-            </a>
-        </div>
-    </section>
+        </section>
     </main>
 
     <!-- Footer -->
 
     <footer>
         <nav class="nav">
-            <a href="main.html" class="nav__item nav__item--aktiv">
-                <img src="images/icon-hjem.svg" alt="Hjem">
+            <a href="main.html" class="nav__item">
+                <span class="icon icon--hjem"></span>
             </a>
-            <a href="findprojekt.html" class="nav__item nav__item--aktiv">
-                <img src="images/icon-tilfoej.svg" alt="Tilføj">
+            <a href="findprojekt.html" class="nav__item">
+                <span class="icon icon--tilfoej"></span>
             </a>
-            <a href="kalender.html" class="nav__item nav__item--aktiv">
-                <img src="images/icon-kalender.svg" alt="Kalender">
+            <a href="kalender.html" class="nav__item">
+                <span class="icon icon--kalender"></span>
             </a>
             <a href="profil.html" class="nav__item nav__item--aktiv">
-                <img src="images/icon-profil.svg" alt="Profil">
+                <span class="icon icon--profil"></span>
             </a>
         </nav>
     </footer>
