@@ -101,7 +101,11 @@ main {
   margin-bottom: var(--space-m);
   position: relative;
 }
-
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .hero__knap {
   position: absolute;
@@ -278,7 +282,12 @@ main {
 .icon--profil {
   background-image: url('images/icon-profil.svg');
 }
-
+.icon--pil {
+  background-image: url('images/icon-pil.svg');
+}
+.icon--filter {
+  background-image: url('images/icon-filter.svg');
+}
 /* aktiv nav */
 .nav__item .icon {
   opacity: 0.5;
