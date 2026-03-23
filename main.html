@@ -131,6 +131,38 @@
                 </a>
             </div>
         </section>
+
+        <!-- FILTER MODAL -->
+<div class="filter" id="filter">
+  <div class="filter__overlay"></div>
+
+  <div class="filter__content">
+    <div class="filter__header">
+      <h2>Præferencer for frivilligt arbejde</h2>
+      <span class="filter__close" onclick="toggleFilter()">✕</span>
+    </div>
+
+    <!-- slider -->
+    <div class="filter__box">
+      <label>Mængde af tid om ugen:</label>
+      <input type="range" min="1" max="40" value="16" id="timerRange">
+      <p id="timerValue">16 t.</p>
+    </div>
+
+    <!-- valg -->
+    <div class="filter__item">
+      <span>Hvor i Danmark vil du være</span>
+      <span>›</span>
+    </div>
+
+    <div class="filter__item">
+      <span>Hvilken type arbejde</span>
+      <span>›</span>
+    </div>
+  </div>
+</div>
+
+
     </main>
 
     <!-- Footer -->
@@ -151,5 +183,7 @@
             </a>
         </nav>
     </footer>
+
+    <script src="filtrering.js"></script>
 </body>
 </html>

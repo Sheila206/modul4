@@ -21,13 +21,13 @@
         <section class="hero">
             <div class="hero__top">
                 <img class="hero__logo" src="images/logo.svg" alt="logo">
-                <span class="icon icon--filter"></span>
+               <span class="icon icon--filter" onclick="toggleFilter()"></span>
             </div>
         </section>
         <section class="sektion">
             <h2 class="sektion__titel">Find projeker</h2>
             <div class="grid">
-                <a href="#" class="kort">
+                <a href="#" class="kort" data-location="odense" data-type="cafe">
                     <div class="kort__billede"></div>
                     <div class="kort__overlay">
                         <h3 class="kort__titel">Integrationscafé</h3>
@@ -35,7 +35,7 @@
                         <p class="kort__tid">17-20</p>
                     </div>
                 </a>
-                <a href="#" class="kort">
+              <a href="#" class="kort" data-location="odense" data-type="sortering">
                     <div class="kort__billede"></div>
                     <div class="kort__overlay">
                         <h3 class="kort__titel">Sortering</h3>
@@ -43,7 +43,7 @@
                         <p class="kort__tid">10-13</p>
                     </div>
                 </a>
-                <a href="#" class="kort">
+              <a href="#" class="kort" data-location="odense" data-type="indsamling">
                     <div class="kort__billede"></div>
                     <div class="kort__overlay">
                         <h3 class="kort__titel">Café</h3>
@@ -92,5 +92,48 @@
             </a>
         </nav>
     </footer>
+    
+
+<!-- FILTER MODAL -->
+<div class="filter" id="filter">
+  <div class="filter__overlay"></div>
+
+  <div class="filter__content">
+    <div class="filter__header">
+      <h2>Præferencer for frivilligt arbejde</h2>
+      <span class="filter__close" onclick="toggleFilter()">✕</span>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="filter__box">
+      <label>Mængde af tid om ugen:</label>
+      <input type="range" min="1" max="40" value="16" id="timerRange">
+      <p id="timerValue">16 t.</p>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="filter__gruppe">
+      <h3>Hvor i Danmark</h3>
+      <label><input type="checkbox" value="odense" class="filter-location"> Odense</label>
+      <label><input type="checkbox" value="aarhus" class="filter-location"> Aarhus</label>
+      <label><input type="checkbox" value="kbh" class="filter-location"> København</label>
+    </div>
+
+    <!-- TYPE -->
+    <div class="filter__gruppe">
+      <h3>Type opgave</h3>
+      <label><input type="checkbox" value="cafe" class="filter-type"> Café</label>
+      <label><input type="checkbox" value="sortering" class="filter-type"> Sortering</label>
+      <label><input type="checkbox" value="indsamling" class="filter-type"> Indsamling</label>
+    </div>
+    <div class="filter__actions">
+  <button class="knap knap--sekundaer" onclick="resetFilters()">Nulstil</button>
+  <button class="knap knap--primaer" onclick="applyAndSave()">Anvend filtre</button>
+</div>
+  </div>
+</div>
+<script src="js/filtrering.js" defer></script>
 </body>
+
+
 </html>
