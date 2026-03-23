@@ -8,11 +8,12 @@
 
   /* farver */
   --color-primary: #D52B1E;
-  --color-text: #010101;
+  --color-text: #000000;
   --color-background: #FDFDFD;
   --color-headerbg: #EDEDED;
 
   /* spacing */
+  --space-0: 0;
   --space-s: 8px;
   --space-m: 16px;
   --space-l: 24px;
@@ -94,13 +95,23 @@ main {
 .hero__kort {
   background: var(--color-headerbg);
   padding: var(--space-l);
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-right: -16px;
   min-height: 180px;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: var(--space-m);
   position: relative;
+  overflow: hidden;
+  z-index: -2;
 }
+
+.hero__midt {
+  color: var(--color-background);
+}
+
 .hero__top {
   display: flex;
   justify-content: space-between;
@@ -234,6 +245,16 @@ main {
   display: block;
 }
 
+.hero__kort > img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(.8);
+}
 
 .input {
   padding: var(--space-m);
