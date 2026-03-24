@@ -24,6 +24,7 @@
         </section>
         <section class="login">
             <h2 class="sektion__titel">Log ind</h2>
+            <form class="form" onsubmit="event.preventDefault(); login();"></form>
             <form class="form">
                 <div class="form__felt">
                     <label class="form__label" for="brugernavn">Brugernavn</label>
@@ -32,10 +33,11 @@
                 <div class="form__felt">
                     <label class="form__label" for="adgangskode">Adgangskode</label>
                     <input class="input" id="adgangskode" type="password">
+                    <p id="message"></p>
                 </div>
                 <a class="knap knap--sekundaer" href="opretbruger.html">Opret profil</a>
                 <div class="form__bund">
-                    <a class="knap knap--primaer" href="main.html">Log ind</a>
+                    <button type="submit" class="knap knap--primaer">Log ind</button>
                 </div>
             </form>
         </section>
@@ -43,5 +45,8 @@
     <!-- Footer -->
     <footer>
     </footer>
+
+     <script src="login.js"></script>
+
 </body>
 </html>
