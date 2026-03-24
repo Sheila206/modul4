@@ -438,3 +438,45 @@ main {
 .filter__actions .knap {
   flex: 1;
 }
+
+
+
+
+.dropdown-header {
+  width: 100%;
+  padding: var(--space-m);
+  background: var(--color-headerbg);
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-body);
+}
+
+.dropdown-content {
+  display: none;
+  padding: var(--space-m);
+  background: #f5f5f5
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+.dropdown.active .icon--pil {
+  transform: rotate(90deg);
+}
+
+.trekant {
+ width: 0;
+ height: 0;
+ border-left: 6px solid transparent;
+ border-right: 6px solid transparent;
+ border-top:8px solid black;
+ transition: 0.3s;
+}
+
+.dropdown.active .trekant {
+  transform: rotate(180deg) ;
+}
