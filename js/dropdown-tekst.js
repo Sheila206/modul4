@@ -1,21 +1,25 @@
-const dropdowns = document.querySelectorAll(".dropdown");
+console.log("")
 
-dropdowns.forEach(function(dropdown) {
+document.addEventListener("DOMContentLoaded", function() {
 
-    const header = dropdown.querySelector(".dropdown-header");
+    const dropdowns = document.querySelectorAll(".dropdown");
 
-    dropdown.addEventListener("click", function() {
-        const isOpen = dropdown.classList.contains("active");
+    dropdowns.forEach(function(dropdown) {
 
-        dropdowns.forEach(function(item) {
-            item.classList.remove("active");
+        dropdown.addEventListener("click", function() {
+
+            const isOpen = dropdown.classList.contains("active");
+
+            dropdowns.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            if (!isOpen) {
+                dropdown.classList.add("active");
+            }
+
         });
 
-        if (!isOpen) {
-            dropdown.classList.add("active");
-        }
-
-        });
     });
 
-    
+});
