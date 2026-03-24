@@ -11,6 +11,9 @@
 
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- java script -->
+    <script src="js-kopi/foedselsdag.js" defer> </script>
 </head>
 
 <!-- body -->
@@ -41,9 +44,15 @@
                 <div class="form__felt">
                     <label class="form__label">Fødselsdag</label>
                     <div class="form__row">
-                        <input class="input" type="number" placeholder="Dag">
-                        <input class="input" type="number" placeholder="Måned">
-                        <input class="input" type="number" placeholder="År">
+                        <select id="dag" class="input">
+                            <option value="">Dag</option>
+                        </select>
+                        <select id="maaned" class="input">
+                            <option value="">Måned</option>
+                        </select>
+                        <select id="aar" class="input">
+                            <option value="">År</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form__bund">
@@ -56,4 +65,5 @@
     <footer>
     </footer>
 </body>
+
 </html>
