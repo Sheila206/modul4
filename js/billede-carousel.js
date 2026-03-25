@@ -9,7 +9,7 @@ class Carousel {
         
         this.currentIndex = 0;
         this.interval = null;
-        this.intervalTime = 2; // tid
+        this.intervalTime = 3000; // tid
         
         this.init();
     }
