@@ -301,6 +301,10 @@ main {
   height: 60px;
 }
 
+.nav__label {
+  display: none;
+}
+
 /*ICONS*/
 .icon {
   display: inline-block;
@@ -630,10 +634,11 @@ main {
     content: url("images/primaer-logo-hvid.svg");
     width: 280px;
   }
-  
-  .hero__kort{
+
+  .hero__kort {
     height: 400px;
   }
+
   .container {
     max-width: 900px;
     margin: 0 auto;
@@ -704,4 +709,160 @@ main {
     width: 100%;
     max-width: 400px;
   }
+}
+
+/*desktop og stor tablet*/
+@media (min-width: 1024px) {
+  footer {
+    position: static;
+  }
+
+  .nav {
+    transform: none;
+    max-width: none;
+  }
+
+  /* HEADER*/
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: var(--color-headerbg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    z-index: 1000;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    /* 🔥 vigtig */
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .nav__menu {
+    display: flex;
+    gap: 32px;
+    /* 🔥 styrer afstand */
+  }
+
+  /* LOGO*/
+
+  .nav__logo {
+    height: 32px;
+  }
+
+  /* MENU */
+
+  .nav__item {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .nav__label {
+    display: inline;
+  }
+
+  /* fjern mobil ikoner */
+  .icon {
+    display: none;
+  }
+
+  /* container til links */
+  .nav {
+    gap: 0;
+  }
+
+  .nav__item {
+    margin-left: 32px;
+  }
+
+  /* HOVER PÅ NAV */
+
+  .nav__item:hover {
+    color: var(--color-primary);
+  }
+
+  /* AKTIV SIDE */
+
+  .nav__item--aktiv {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  /* LAYOUT */
+
+  main {
+    padding-top: 90px;
+  }
+
+  .hero__carousel-container {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero__kort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__slide {
+    display: none;
+  }
+
+  .hero__slide.active {
+    display: flex;
+  }
+
+  /* GRID*/
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .scroll {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: visible;
+  }
+
+  .scroll .kort {
+    min-width: unset;
+  }
+
+  /*HERO KORT */
+
+  .hero__kort {
+    aspect-ratio: 16 / 6;
+    height: auto;
+  }
+
+  .hero .hero__logo {
+    width: 320px;
+  }
+
+  .hero__kort img {
+    object-fit: cover;
+    object-position: center 30%;
+  }
+
+  /* SPACING */
+
+  .sektion {
+    margin-bottom: 80px;
+  }
+
 }
