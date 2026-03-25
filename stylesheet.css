@@ -36,7 +36,7 @@
 /* GLOBALT */
 body {
   background: var(--color-background);
-  background-image: url(images/BaggrundDesign.png);
+  background-image: url(images/Baggrund.png);
   color: var(--color-text);
   font-family: var(--font-primary);
   margin: 0;
