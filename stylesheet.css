@@ -10,7 +10,7 @@
   --color-text: #010101;
   --color-text-white: #FDFDFD;
   --color-background: #fdfdfd;
-  --color-headerbg: #EDEDED;
+  --color-headerbg: #FDFDFD;
 
   /* spacing */
   --space-0: 0;
@@ -626,13 +626,22 @@ main {
 
 /*tablet */
 @media (min-width: 768px) {
+  .hero .hero__logo {
+    content: url("images/primaer-logo-hvid.svg");
+    width: 280px;
+  }
+  
+  .hero__kort{
+    height: 400px;
+  }
   .container {
     max-width: 900px;
     margin: 0 auto;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* IKKE 3 */
+    grid-template-columns: repeat(2, 1fr);
+    /* IKKE 3 */
     gap: 24px;
   }
 
@@ -647,7 +656,7 @@ main {
     right: 0;
     display: flex;
     justify-content: center;
-    z-index: 1000; 
+    z-index: 1000;
   }
 
   .nav {
@@ -659,6 +668,40 @@ main {
     background: var(--color-headerbg);
     display: flex;
     justify-content: space-around;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .login {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .input {
+    height: 50px;
+    padding: 0 12px;
+    border-radius: var(--radius);
+  }
+
+  .knap--sekundaer {
+    align-self: center;
+    margin-top: var(--space-s);
+  }
+
+  .form__bund {
+    position: sticky;
+    bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .knap--primaer {
+    width: 100%;
+    max-width: 400px;
   }
 }
