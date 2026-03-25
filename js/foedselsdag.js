@@ -1,8 +1,8 @@
 // Sheilas kode 
 //inspireret af youtube video:"JavaScript for begyndere - DOM Manipulation" https://www.youtube.com/watch?v=mpAiYMaoUtQ
 //inspireret af youtube video:"Build a HTML Date Dropdown Picker" https://www.youtube.com/watch?v=IPGbM6HgWEA
-// Brugt AI til hjælp: DeepSeek AI, Prompts ligger inde på afleveringsmapppen
-// W3 Schools: 
+// Brugt AI til hjælp: ChapGBT, Prompts ligger inde på afleveringsmapppen
+
 
 
 const dagSelect = document.getElementById("dag");
@@ -31,6 +31,13 @@ aarSelect.addEventListener("change", visDato);
 
 function visDato() {
     if (dagSelect.value && maanedSelect.value && aarSelect.value) {
-        console.log(dagSelect.value, maanedSelect.value, aarSelect.value);
+        
+        const valgtDato = {
+            dag: dagSelect.value,
+            maaned: maanedSelect.value,
+            aar: aarSelect.value
+        };
+
+        console.log(valgtDato);
     }
 }
