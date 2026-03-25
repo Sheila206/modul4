@@ -1,6 +1,9 @@
 // Sheilas kode 
 //inspireret af youtube video:"JavaScript for begyndere - DOM Manipulation" https://www.youtube.com/watch?v=mpAiYMaoUtQ
 //inspireret af youtube video:"Build a HTML Date Dropdown Picker" https://www.youtube.com/watch?v=IPGbM6HgWEA
+// Brugt AI til hjælp: DeepSeek AI, Prompts ligger inde på afleveringsmapppen
+// W3 Schools: 
+
 
 const dagSelect = document.getElementById("dag");
 const maanedSelect = document.getElementById("maaned");
