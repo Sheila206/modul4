@@ -18,18 +18,52 @@
 <body>
     <main class="container">
         <section class="hero">
-            <div class="hero__kort">
-                <img src="images/sotering.webp" alt="Test placeholder billede">
-                <div class="hero__top">
-                    <img class="hero__logo" src="images/logo.svg" alt="logo">
+            <div class="hero__carousel-container">
+                <div class="hero__carousel-slides">
+                    <!-- Slide 1 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/indsamling-gdt.jpg" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="hero__midt">
+                            <h2 class="hero__titel">Kom med til landsindsamling</h2>
+                        </div>
+                        <button class="knap knap--sekundaer2">Se mere</button>
+                    </div>
+                    
+                    <!-- Slide 2 - Tilføj dine billeder her -->
+                    <div class="hero__kort hero__slide">
+                        <img src="images/genbrug-gdt.jpg" alt="Genbrug">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="hero__midt">
+                            <h2 class="hero__titel">Bliv frivillig til genbrug</h2>
+                        </div>
+                        <button class="knap knap--sekundaer2">Læs mere</button>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="hero__kort hero__slide">
+                        <img src="images/flygtninge-gdt.jpg" alt="Flygtninge">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/logo.svg" alt="logo">
+                        </div>
+                        <div class="hero__midt">
+                            <h2 class="hero__titel">Hjælp flygtninge i din by</h2>
+                        </div>
+                        <button class="knap knap--sekundaer2">Bliv frivillig</button>
+                    </div>
                 </div>
-
-                <div class="hero__midt">
-                    <h2 class="hero__titel">Hjælp til i genbrugsbutik</h2>
-                </div>
-                <button class="knap knap--sekundaer2">Se mere</button>
+                
+                <!-- Navigationsknapper -->
+                <button class="hero__nav hero__nav--prev" aria-label="Forrige billede">❮</button>
+                <button class="hero__nav hero__nav--next" aria-label="Næste billede">❯</button>
+                
+                <!-- Indikatorprikker -->
+                <div class="hero__dots"></div>
             </div>
-            
         </section>
         <!-- dine projekter -->
         <section class="sektion">
@@ -183,7 +217,7 @@
             </a>
         </nav>
     </footer>
-
+    <script src="billede-carousel.js"></script>
     <script src="filtrering.js"></script>
 </body>
 </html>
