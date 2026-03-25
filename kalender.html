@@ -24,17 +24,18 @@
         </section>
         <!-- Kalender -->
         <section class="sektion">
-            <h2 class="sektion__titel">Kalender</h2>
+            <h1 class="sektion__titel">Kalender</h1>
         </section>
         <section>
-            <h3 class="sektion__titel">Under opbygning</h3>
-            <p>Funktionen er under udvikling og vil være tilgængelig senere.</p>
-            <div class="form__bund">
-                <a href="main.html" class="knap knap--primaer">
-                    Tilbage til forsiden
-                </a>
-            </div>
+            <img class="kalender__billede" src="images/kalender.webp" alt="kalender">
         </section>
+        <div class="modal" id="modal">
+            <div class="modal__box">
+                <h2>Under udvikling</h2>
+                <p>Denne funktion virker ikke endnu.</p>
+                <button class="knap" onclick="closeModal()">OK</button>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -62,5 +63,11 @@
             </div>
         </nav>
     </footer>
+    <script>
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
 </body>
+
 </html>

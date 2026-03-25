@@ -481,9 +481,33 @@ main {
 .filter__actions .knap {
   flex: 1;
 }
+/*kalender side*/
+.kalender__billede {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  z-index: 2000;
+}
 
+.modal__box {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 300px;
+  text-align: center;
+}
 /*----------------------------Dropdown---------------------------*/
 .dropdown-header {
   width: 100%;
@@ -645,9 +669,24 @@ main {
 
 /*tablet */
 @media (min-width: 768px) {
-  .hero .hero__logo {
+  .hero__logo {
+    display: none;
+    width: 60px;
+  }
+
+  /* forside logo*/
+  .page-home .hero__logo {
+    display: block;
     content: url("images/primaer-logo-hvid.svg");
-    width: 280px;
+    width: 320px;
+  }
+
+  /* undersider logo*/
+  .page-kalender .hero__logo,
+  .page-profil .hero__logo,
+  .page-projekter .hero__logo {
+    display: block;
+    content: url("images/logo.svg");
   }
 
   .hero__kort {
@@ -725,10 +764,32 @@ main {
     width: 100%;
     max-width: 400px;
   }
+  /*kalender side*/
+    .kalender__billede {
+    max-width: 500px;
+  }
 }
 
 /*desktop og stor tablet*/
 @media (min-width: 1024px) {
+    /* skjul alle logo */
+  .hero__logo {
+    display: none;
+  }
+
+  /* vis KUN på forsiden */
+  .page-home .hero__logo {
+    display: block;
+    width: 320px;
+  }
+   /* undersider logo*/
+  .page-kalender .hero__logo,
+  .page-profil .hero__logo,
+  .page-projekter .hero__logo {
+    display: none;
+  }
+
+
   footer {
     position: static;
   }
@@ -859,17 +920,9 @@ main {
     height: auto;
   }
 
-  .hero .hero__logo {
-    width: 320px;
-  }
-
   .hero__kort img {
     object-fit: cover;
     object-position: center 30%;
-  }
-
-  .hero__logo {
-    display: none;
   }
 
   .page-home .hero__logo {
@@ -886,5 +939,9 @@ main {
 
   .sektion {
     margin-bottom: 80px;
+  }
+    /*kalender side*/
+    .kalender__billede {
+    max-width: 600px;
   }
 }
