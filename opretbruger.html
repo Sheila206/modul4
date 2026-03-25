@@ -14,18 +14,72 @@
 
     <!-- java script -->
     <script src="js/foedselsdag.js" defer> </script>
+
+    <!-- java script til carousel -->
+    <script src="js/billede-carousel.js" defer> </script>
 </head>
 
 <!-- body -->
 
 <body class="opretbruger">
     <main class="container">
+
+        <!------------------//////////////// CAROUSEL ////////////////------------------------->
         <section class="hero">
-            <div class="hero__kort">
-                <a class="knap knap--sekundaer hero__knap" href="index.html">Log ind</a>
-                <img class="hero__logo" src="images/primaer-logo.svg" alt="logo">
+            <div class="hero__carousel-container">
+                <div class="hero__carousel-slides">
+                    <!-- Slide 1 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/indsamling.jpg" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/primaer-logo-hvid.svg" alt="logo">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/sotering.webp" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/primaer-logo-hvid.svg" alt="logo">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/strik.jpg" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/primaer-logo-hvid.svg" alt="logo">
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/flygtninge.jpg" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/primaer-logo-hvid.svg" alt="logo">
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="hero__kort hero__slide active">
+                        <img src="images/onlinefrivillig.jpg" alt="Landsindsamling">
+                        <div class="hero__top">
+                            <img class="hero__logo" src="images/primaer-logo-hvid.svg" alt="logo">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigationsknapper -->
+                <button class="hero__nav hero__nav--prev" aria-label="Forrige billede">❮</button>
+                <button class="hero__nav hero__nav--next" aria-label="Næste billede">❯</button>
+
+                <!-- Indikatorprikker -->
+                <div class="hero__dots"></div>
             </div>
         </section>
+        <!-------------------//////////////// CAROUSEL ////////////////------------------------>
+
         <section class="login">
             <h2 class="sektion__titel">Ny profil</h2>
             <form class="form">
