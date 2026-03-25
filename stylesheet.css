@@ -771,8 +771,8 @@ main {
   }
 
   .form__bund {
-    position: sticky;
-    bottom: 24px;
+    position: bottom;
+    margin-bottom: 24px;
     display: flex;
     justify-content: center;
   }
