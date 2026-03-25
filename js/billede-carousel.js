@@ -1,4 +1,8 @@
-// Carousel klasse
+//Jamies js kode 
+//inspireret af youtube video:"[titel]" [link]
+// Brugt AI til hjælp: DeepSeek AI, Prompts ligger inde på afleveringsmapppen
+// W3 Schools: 
+//Carousel klassen
 class Carousel {
     constructor(container) {
         this.container = container;
@@ -9,7 +13,7 @@ class Carousel {
         
         this.currentIndex = 0;
         this.interval = null;
-        this.intervalTime = 2; // tid
+        this.intervalTime = 3000; // tid
         
         this.init();
     }

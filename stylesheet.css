@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 /* DESIGN SYSTEM */
@@ -8,8 +9,9 @@
 
   /* farver */
   --color-primary: #D52B1E;
-  --color-text: #000000;
-  --color-background: #FDFDFD;
+  --color-text: #010101;
+  --color-text-white:#FDFDFD;
+  --color-background: #fdfdfd;
   --color-headerbg: #EDEDED;
 
   /* spacing */
@@ -34,6 +36,7 @@
 /* GLOBALT */
 body {
   background: var(--color-background);
+  background-image: url('images/-----logo.svg');
   color: var(--color-text);
   font-family: var(--font-primary);
   margin: 0;

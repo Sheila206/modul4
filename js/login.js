@@ -1,3 +1,8 @@
+//[navn] js kode 
+//inspireret af youtube video:"[titel]" [link]
+// Brugt AI til hjælp: [Ai], Prompts ligger inde på afleveringsmapppen
+// W3 Schools: 
+
 function login() {
     let username = document.getElementById("brugernavn").value;
     let password = document.getElementById("adgangskode").value;

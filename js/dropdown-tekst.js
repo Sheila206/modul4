@@ -1,3 +1,8 @@
+//[navn] js kode 
+//inspireret af youtube video:"[titel]" [link]
+// Brugt AI til hjælp: [Ai], Prompts ligger inde på afleveringsmapppen
+// W3 Schools: 
+
 console.log("")
 
 document.addEventListener("DOMContentLoaded", function() {
