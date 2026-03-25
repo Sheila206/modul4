@@ -810,7 +810,7 @@ main {
     padding: 0 var(--space-2);
     max-width: 1200px;
     margin: 0 auto;
-    padding-top:var(--nav-height)
+    padding-top: var(--nav-height)
   }
 
 
@@ -866,6 +866,15 @@ main {
   .hero__kort img {
     object-fit: cover;
     object-position: center 30%;
+  }
+
+  .hero__logo {
+    display: none;
+  }
+
+  .page-home .hero__logo {
+    display: block;
+    width: 320px;
   }
 
   /* KORT */
