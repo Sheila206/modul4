@@ -669,9 +669,24 @@ main {
 
 /*tablet */
 @media (min-width: 768px) {
-  .hero .hero__logo {
+  .hero__logo {
+    display: none;
+    width: 60px;
+  }
+
+  /* forside logo*/
+  .page-home .hero__logo {
+    display: block;
     content: url("images/primaer-logo-hvid.svg");
-    width: 280px;
+    width: 320px;
+  }
+
+  /* undersider logo*/
+  .page-kalender .hero__logo,
+  .page-profil .hero__logo,
+  .page-projekter .hero__logo {
+    display: block;
+    content: url("images/logo.svg");
   }
 
   .hero__kort {
@@ -749,10 +764,32 @@ main {
     width: 100%;
     max-width: 400px;
   }
+  /*kalender side*/
+    .kalender__billede {
+    max-width: 500px;
+  }
 }
 
 /*desktop og stor tablet*/
 @media (min-width: 1024px) {
+    /* skjul alle logo */
+  .hero__logo {
+    display: none;
+  }
+
+  /* vis KUN på forsiden */
+  .page-home .hero__logo {
+    display: block;
+    width: 320px;
+  }
+   /* undersider logo*/
+  .page-kalender .hero__logo,
+  .page-profil .hero__logo,
+  .page-projekter .hero__logo {
+    display: none;
+  }
+
+
   footer {
     position: static;
   }
@@ -883,17 +920,9 @@ main {
     height: auto;
   }
 
-  .hero .hero__logo {
-    width: 320px;
-  }
-
   .hero__kort img {
     object-fit: cover;
     object-position: center 30%;
-  }
-
-  .hero__logo {
-    display: none;
   }
 
   .page-home .hero__logo {
@@ -910,5 +939,9 @@ main {
 
   .sektion {
     margin-bottom: 80px;
+  }
+    /*kalender side*/
+    .kalender__billede {
+    max-width: 600px;
   }
 }
