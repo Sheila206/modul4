@@ -452,6 +452,18 @@ main {
   font-size: var(--font-body);
 }
 
+.dropdown-header2 {
+  width: 100%;
+  padding: var(--space-m);
+  background: var(--color-headerbg);
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-body);
+}
+
 .dropdown-content {
   display: none;
   padding: var(--space-m);
