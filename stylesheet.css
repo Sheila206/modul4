@@ -508,6 +508,15 @@ main {
 
   z-index: 2000;
 }
+/*log indside*/
+.page-logind .hero__logo,
+.page-opretbruger .hero__logo  {
+  display: block;
+  width: 220px;
+}
+
+
+
 
 .modal__box {
   background: white;
