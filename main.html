@@ -18,7 +18,7 @@
 
 <!-- body -->
 
-<body>
+<body class="page-home">
     <main class="container">
         <section class="hero">
             <div class="hero__carousel-container">
@@ -36,7 +36,7 @@
                         <br>
                         <button class="knap knap--sekundaer2">Se mere</button>
                     </div>
-                    
+
                     <!-- Slide 2 - Tilføj dine billeder her -->
                     <div class="hero__kort hero__slide">
                         <img src="images/genbrug-gdt.jpg" alt="Genbrug">
@@ -50,7 +50,7 @@
                         <br>
                         <button class="knap knap--sekundaer2">Læs mere</button>
                     </div>
-                    
+
                     <!-- Slide 3 -->
                     <div class="hero__kort hero__slide">
                         <img src="images/flygtninge-gdt.jpg" alt="Flygtninge">
@@ -65,11 +65,11 @@
                         <button class="knap knap--sekundaer2">Bliv frivillig</button>
                     </div>
                 </div>
-                
+
                 <!-- Navigationsknapper -->
                 <button class="hero__nav hero__nav--prev" aria-label="Forrige billede">❮</button>
                 <button class="hero__nav hero__nav--next" aria-label="Næste billede">❯</button>
-                
+
                 <!-- Indikatorprikker -->
                 <div class="hero__dots"></div>
             </div>
@@ -176,34 +176,34 @@
         </section>
 
         <!-- FILTER MODAL -->
-<div class="filter" id="filter">
-  <div class="filter__overlay"></div>
+        <div class="filter" id="filter">
+            <div class="filter__overlay"></div>
 
-  <div class="filter__content">
-    <div class="filter__header">
-      <h2>Præferencer for frivilligt arbejde</h2>
-      <span class="filter__close" onclick="toggleFilter()">✕</span>
-    </div>
+            <div class="filter__content">
+                <div class="filter__header">
+                    <h2>Præferencer for frivilligt arbejde</h2>
+                    <span class="filter__close" onclick="toggleFilter()">✕</span>
+                </div>
 
-    <!-- slider -->
-    <div class="filter__box">
-      <label>Mængde af tid om ugen:</label>
-      <input type="range" min="1" max="40" value="16" id="timerRange">
-      <p id="timerValue">16 t.</p>
-    </div>
+                <!-- slider -->
+                <div class="filter__box">
+                    <label>Mængde af tid om ugen:</label>
+                    <input type="range" min="1" max="40" value="16" id="timerRange">
+                    <p id="timerValue">16 t.</p>
+                </div>
 
-    <!-- valg -->
-    <div class="filter__item">
-      <span>Hvor i Danmark vil du være</span>
-      <span>›</span>
-    </div>
+                <!-- valg -->
+                <div class="filter__item">
+                    <span>Hvor i Danmark vil du være</span>
+                    <span>›</span>
+                </div>
 
-    <div class="filter__item">
-      <span>Hvilken type arbejde</span>
-      <span>›</span>
-    </div>
-  </div>
-</div>
+                <div class="filter__item">
+                    <span>Hvilken type arbejde</span>
+                    <span>›</span>
+                </div>
+            </div>
+        </div>
 
 
     </main>
@@ -212,21 +212,27 @@
 
     <footer>
         <nav class="nav">
-            <a href="main.html" class="nav__item nav__item--aktiv">
-                <span class="icon icon--hjem"></span>
-            </a>
-            <a href="findprojekt.html" class="nav__item">
-                <span class="icon icon--tilfoej"></span>
-            </a>
-            <a href="kalender.html" class="nav__item">
-                <span class="icon icon--kalender"></span>
-            </a>
-            <a href="profil.html" class="nav__item">
-                <span class="icon icon--profil"></span>
-            </a>
+            <img src="images/primaer-logo.svg" alt="logo" class="nav__logo">
+            <div class="nav__menu">
+                <a href="main.html" class="nav__item nav__item--aktiv">
+                    <span class="icon icon--hjem"></span>
+                    <span class="nav__label">Hjem</span>
+                </a>
+                <a href="findprojekt.html" class="nav__item">
+                    <span class="icon icon--tilfoej"></span>
+                    <span class="nav__label">Find aktiviteter</span>
+                </a>
+                <a href="kalender.html" class="nav__item">
+                    <span class="icon icon--kalender"></span>
+                    <span class="nav__label">Kalender</span>
+                </a>
+                <a href="profil.html" class="nav__item">
+                    <span class="icon icon--profil"></span>
+                    <span class="nav__label">Profil</span>
+                </a>
+            </div>
         </nav>
     </footer>
-
-    <script src="filtrering.js"></script>
 </body>
+
 </html>
