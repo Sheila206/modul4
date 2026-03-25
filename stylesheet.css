@@ -481,9 +481,33 @@ main {
 .filter__actions .knap {
   flex: 1;
 }
+/*kalender side*/
+.kalender__billede {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  z-index: 2000;
+}
 
+.modal__box {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  max-width: 300px;
+  text-align: center;
+}
 /*----------------------------Dropdown---------------------------*/
 .dropdown-header {
   width: 100%;
