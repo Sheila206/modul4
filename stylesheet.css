@@ -489,10 +489,18 @@ main {
   display: block;
   margin: 0 auto; 
 }
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: none;
+}
+
+/*modal pop up*/
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
 
   display: flex;
   justify-content: center;
