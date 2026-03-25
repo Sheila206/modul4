@@ -3,8 +3,6 @@
 //inspireret af youtube video:"Build a HTML Date Dropdown Picker" https://www.youtube.com/watch?v=IPGbM6HgWEA
 // Brugt AI til hjælp: ChapGBT, Prompts ligger inde på afleveringsmapppen
 
-
-
 const dagSelect = document.getElementById("dag");
 const maanedSelect = document.getElementById("maaned");
 const aarSelect = document.getElementById("aar");
