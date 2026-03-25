@@ -28,7 +28,7 @@
   --font-h3: 20px;
   --font-body: 18px;
 
-  --nav-height: 60px;
+  --nav-height: 70px;
 }
 
 /* GLOBALT */
@@ -300,6 +300,7 @@ main {
   align-items: center;
   height: 60px;
 }
+
 .nav__menu {
   display: flex;
   justify-content: space-between;
@@ -310,9 +311,11 @@ main {
 .nav__label {
   display: none;
 }
+
 .nav__logo {
   display: none;
 }
+
 .nav__logo {
   display: none;
 }
@@ -746,7 +749,6 @@ main {
     background: var(--color-headerbg);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 40px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 0;
@@ -756,13 +758,15 @@ main {
 
   .nav__menu {
     display: flex;
-    gap: 32px;
-    /* 🔥 styrer afstand */
+    gap: 40px;
+    width: auto;
+    margin-left: auto;
   }
 
   /* LOGO*/
 
   .nav__logo {
+    display: block;
     height: 32px;
   }
 
@@ -803,8 +807,12 @@ main {
   /* LAYOUT */
 
   main {
-    padding-top: 90px;
+    padding: 0 var(--space-2);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top:var(--nav-height)
   }
+
 
   .hero__carousel-container {
     width: 100vw;
@@ -830,7 +838,8 @@ main {
   /* GRID*/
 
   .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-2);
   }
 
   .scroll {
@@ -857,6 +866,11 @@ main {
   .hero__kort img {
     object-fit: cover;
     object-position: center 30%;
+  }
+
+  /* KORT */
+  .kort {
+    height: 260px;
   }
 
   /* SPACING */
