@@ -999,7 +999,7 @@ main {
   }
 
   .knap--primaer {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     margin: 0 auto;
   }
@@ -1025,4 +1025,5 @@ main {
     gap: 16px;
     position: static;
   }
+  
 }
