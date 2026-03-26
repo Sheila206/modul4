@@ -5,13 +5,10 @@
     <!-- Basic meta settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
     <!-- Page title -->
     <title>Røde Kors</title>
-
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-
     <!-- java script til carousel -->
     <script src="js/billede-carousel.js" defer> </script>
 </head>
@@ -21,8 +18,8 @@
 <body class="page-logind">
     <main class="container">
 
-<!------------------//////////////// CAROUSEL ////////////////------------------------->
-        <section class="hero">
+        <!--//////////////// CAROUSEL ////////////////-->
+        <div class="hero">
             <div class="hero__carousel-container">
                 <div class="hero__carousel-slides">
                     <!-- Slide 1 -->
@@ -67,32 +64,33 @@
 
                 </div>
 
-                <!-- Navigationsknapper -->
+                <!--Navigationsknapper-->
                 <button class="hero__nav hero__nav--prev" aria-label="Forrige billede">❮</button>
                 <button class="hero__nav hero__nav--next" aria-label="Næste billede">❯</button>
 
-                <!-- Indikatorprikker -->
+                <!--Indikatorprikker-->
                 <div class="hero__dots"></div>
             </div>
-        </section>
-        <!-------------------//////////////// CAROUSEL ////////////////------------------------>
+        </div>
 
+        <!--//////////////// CAROUSEL ////////////////-->
         <section class="login">
             <h2 class="sektion__titel">Log ind</h2>
             <form class="form" onsubmit="event.preventDefault(); login();">
-            <form class="form">
-                <div class="form__felt">
-                    <label class="form__label" for="brugernavn">Brugernavn</label>
-                    <input class="input" id="brugernavn" type="text">
-                </div>
-                <div class="form__felt">
-                    <label class="form__label" for="adgangskode">Adgangskode</label>
-                    <input class="input" id="adgangskode" type="password">
-                    <p id="message"></p>
-                </div>
-                <a class="knap knap--sekundaer" href="opretbruger.html">Opret ny profil</a>
-                <div class="form__bund">
-                    <button type="submit" class="knap knap--primaer">Log ind</button>
+                <div class="form">
+                    <div class="form__felt">
+                        <label class="form__label" for="brugernavn">Brugernavn</label>
+                        <input class="input" id="brugernavn" type="text">
+                    </div>
+                    <div class="form__felt">
+                        <label class="form__label" for="adgangskode">Adgangskode</label>
+                        <input class="input" id="adgangskode" type="password">
+                        <p id="message"></p>
+                    </div>
+                    <a class="knap knap--sekundaer" href="opretbruger.html">Opret ny profil</a>
+                    <div class="form__bund">
+                        <button type="submit" class="knap knap--primaer">Log ind</button>
+                    </div>
                 </div>
             </form>
         </section>
@@ -100,8 +98,7 @@
     <!-- Footer -->
     <footer>
     </footer>
-
-     <script src="js/login.js"></script>
-
+    <script src="js/login.js"></script>
 </body>
+
 </html>

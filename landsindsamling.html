@@ -5,25 +5,20 @@
     <!-- Basic meta settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
     <!-- Page title -->
     <title>Røde Kors</title>
-
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
     <script src="js/dropdown-tekst.js"></script>
-
     <!-- java script til carousel -->
     <script src="js/billede-carousel.js" defer> </script>
 </head>
 
 <!-- body -->
 
-<body>
+<body class="page-projekter">
     <main class="container">
-        
-        
-        <!------------------//////////////// CAROUSEL ////////////////------------------------->
+        <!--//////////////// CAROUSEL ////////////////-->
         <section class="hero">
             <div class="hero__carousel-container">
                 <div class="hero__carousel-slides">
@@ -72,57 +67,76 @@
                 <div class="hero__dots"></div>
             </div>
         </section>
-        <!-------------------//////////////// CAROUSEL ////////////////------------------------>
+        <!--//////////////// CAROUSEL ////////////////-->
 
 
         <section class="sektion">
             <h2 class="sektion__titel">Status og data</h2>
             <div class="grid">
-                <button class="knap knap--sekundaer"><h4>Årets indsamling</h4><h2>9.382.335 kr.</h2></button>
-                <button class="knap knap--sekundaer"><h4>Tid du har hjulpet</h4><h2>16t.</h2></button>
-                <button class="knap knap--sekundaer"><h2>12.493</h2><h4>Familier får mad</h4></button>
-                <button class="knap knap--sekundaer"><h4>Menn. i krise hjulpet</h4><h2>523.292</h2></button>
+                <button class="knap knap--sekundaer">
+                    <span>Årets indsamling</span>
+                    <span>9.382.335 kr.</span>
+                </button>
+
+                <button class="knap knap--sekundaer">
+                    <span>Tid du har hjulpet</span>
+                    <span>16t.</span>
+                </button>
+
+                <button class="knap knap--sekundaer">
+                    <span>12.493</span>
+                    <span>Familier får mad</span>
+                </button>
+
+                <button class="knap knap--sekundaer">
+                    <span>Menn. i krise hjulpet</span>
+                    <span>523.292</span>
+                </button>
             </div>
         </section>
         <section class="sektion">
             <h2 class="sektion__titel">Om frivilligarbejdet</h2>
             <div class="dropdown">
-                    <button class="dropdown-header">
-                        <h3>Om frivilligarbejdet</h3>
-                        <span class="trekant"></span>
-                    </button>
+                <button class="dropdown-header">
+                    <span>Om frivilligarbejdet</span>
+                    <span class="trekant"></span>
+                </button>
                 <div class="dropdown-content">
                     <h3> Indsamling 2026</h3>
-                    <p> Indsamlingeen i år går til at hjælpe børn og voksne, der er ramt af krig og katestrofer i verdens brændpunkter.
-                        Mennesker der har mistet alt og har akut brug for mad, vand, lægehjælp osv. bla. i lande som Ukraine.
-                        Derudover går indsamlngen også til at støtte børn og voksne herhjemme, der er udsat enten eller både økonomsk og socialt.
+                    <p> Indsamlingeen i år går til at hjælpe børn og voksne, der er ramt af krig og katestrofer i
+                        verdens brændpunkter.
+                        Mennesker der har mistet alt og har akut brug for mad, vand, lægehjælp osv. bla. i lande som
+                        Ukraine.
+                        Derudover går indsamlngen også til at støtte børn og voksne herhjemme, der er udsat enten eller
+                        både økonomsk og socialt.
                     </p>
                     <br>
-                    <p>Vil du være med til at samle ind til sårbare børn og vokse herhjemme og ude i verdenen? 
+                    <p>Vil du være med til at samle ind til sårbare børn og vokse herhjemme og ude i verdenen?
                         Uanset om du samler ind eller stiller op som frivillig, er du med til at hjælpe.
                         Kom og være med! </p>
-                     <br>
+                    <br>
                 </div>
             </div>
 
             <div class="dropdown">
                 <button class="dropdown-header">
-                    <h3>Hvordan hjælper jeg?</h3>
+                    <span>Hvordan hjælper jeg?</span>
                     <span class="trekant"></span>
                 </button>
                 <div class="dropdown-content">
                     <h3>Frivillig</h3>
-                    <p>Uanset hvilken opgave du tager ansvar for, er du med til at støtte børn både i Danmark og Verdenen.
-                        
+                    <p>Uanset hvilken opgave du tager ansvar for, er du med til at støtte børn både i Danmark og
+                        Verdenen.
+
                     </p>
                 </div>
             </div>
 
             <div class="dropdown">
-                    <button class="dropdown-header">
-                        <h3>Tid og sted</h3>
-                        <span class="trekant"></span>
-                    </button>
+                <button class="dropdown-header">
+                    <span>Tid og sted</span>
+                    <span class="trekant"></span>
+                </button>
                 <div class="dropdown-content">
                     <h3>Sted</h3>
                     <p>Lakrids by Johan Bülow, Joe & the Juice, Thorco Shipping</p> <br>
@@ -133,17 +147,16 @@
 
         </section>
         <br><br><br>
-        <section class="login">
+        <div class="login">
             <div class="form__bund">
                 <a href="main.html" class="knap knap--sekundaer">Afmeld</a>
             </div>
-        </section>
+        </div>
         <br>
 
     </main>
 
     <!-- Footer -->
-
     <footer>
         <nav class="nav">
             <img src="images/primaer-logo.svg" alt="logo" class="nav__logo">
@@ -169,4 +182,5 @@
     </footer>
 
 </body>
+
 </html>

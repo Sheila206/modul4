@@ -91,7 +91,10 @@ p {
   width: 50%;
   border: 1px solid var(--color-background);
 }
-
+.knap span {
+  font-size: 20px;
+  font-weight: bold;
+}
 /* LAYOUT */
 /* begrænser bredden så det ligner mobil */
 main {
@@ -235,7 +238,20 @@ main {
 }
 
 .form__bund {
-  margin-top: auto;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  bottom: 20px;
+}
+.page-home .form__bund,
+.page-kalender .form__bund, 
+.page-profil .form__bund,
+.page-projekter .form__bund {
+  position: fixed;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
 }
 
 .form__felt {
@@ -489,6 +505,10 @@ main {
   height: auto;
   display: block;
   margin: 0 auto; 
+  border: 8px solid;
+  border-color: #FEF1f1;
+  border-radius: var(--radius);
+
 }
 .overlay {
   position: fixed;
@@ -772,7 +792,7 @@ main {
   }
 
   .form__bund {
-    position: bottom;
+    position: fixed;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;

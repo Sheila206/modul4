@@ -5,13 +5,10 @@
     <!-- Basic meta settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-
     <!-- Page title -->
     <title>Røde Kors</title>
-
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-
     <!-- java script til carousel -->
     <script src="js/billede-carousel.js" defer> </script>
 </head>
@@ -21,19 +18,19 @@
 <body class="page-projekter">
     <main class="container">
         <!-- find projekter -->
-        <section class="hero">
+        <div class="hero">
             <div class="hero__top">
                 <img class="hero__logo" src="images/logo.svg" alt="logo">
                 <span class="icon icon--filter" onclick="toggleFilter()"></span>
             </div>
-        </section>
+        </div>
         <section class="sektion">
             <h1 class="sektion__titel">Find aktiviteter</h1> <br>
             <div class="grid">
                 <a href="integration.html" class="kort">
                     <div class="kort__billede" style="background-image: url('images/flygtninge-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Integrationscafé</h3>
+                        <h2 class="kort__titel">Integrationscafé</h2>
                         <p class="kort__dag">Tirsdag</p>
                         <p class="kort__tid">17-20</p>
                     </div>
@@ -41,7 +38,7 @@
                 <a href="#" class="kort">
                     <div class="kort__billede" style="background-image: url('images/foerstehjaelp-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel"> Førstehjælp </h3>
+                        <h2 class="kort__titel"> Førstehjælp </h2>
                         <p class="kort__dag">Mandag</p>
                         <p class="kort__tid">10-13</p>
                     </div>
@@ -49,7 +46,7 @@
                 <a href="sprogtraening.html" class="kort">
                     <div class="kort__billede" style="background-image: url('images/onlinefrivillig-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Sprogtræning</h3>
+                        <h2 class="kort__titel">Sprogtræning</h2>
                         <p class="kort__dag">Onsdag</p>
                         <p class="kort__tid">18-21</p>
                     </div>
@@ -57,7 +54,7 @@
                 <a href="#" class="kort">
                     <div class="kort__billede" style="background-image: url('images/parathjaelper-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Parathjælper</h3>
+                        <h2 class="kort__titel">Parathjælper</h2>
                         <p class="kort__dag">Søndag</p>
                         <p class="kort__tid">09-14</p>
                     </div>
@@ -65,7 +62,7 @@
                 <a href="#" class="kort">
                     <div class="kort__billede" style="background-image: url('images/lektiehjaelper-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Lektiehjælper</h3>
+                        <h2 class="kort__titel">Lektiehjælper</h2>
                         <p class="kort__dag">Mandag d. 22.</p>
                         <p class="kort__tid">12-16</p>
                     </div>
@@ -73,7 +70,7 @@
                 <a href="#" class="kort">
                     <div class="kort__billede" style="background-image: url('images/samarit-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Bliv samarit</h3>
+                        <h2 class="kort__titel">Bliv samarit</h2>
                         <p class="kort__dag">Onsdag d. 24.</p>
                         <p class="kort__tid">12-14</p>
                     </div>
@@ -81,7 +78,7 @@
                 <a href="#" class="kort">
                     <div class="kort__billede" style="background-image: url('images/ungeukrainere-gdt.jpg');"></div>
                     <div class="kort__overlay">
-                        <h3 class="kort__titel">Café for unge <br> ukrainere</h3>
+                        <h2 class="kort__titel">Café for unge <br> ukrainere</h2>
                         <p class="kort__dag">Hver fredag</p>
                         <p class="kort__tid">Fra kl. 17</p>
                     </div>
@@ -99,7 +96,6 @@
         <section>
             <h2 class="sektion__titel">Nye aktiviteter</h2> <br>
         </section>
-
         <section class="hero">
             <div class="hero__carousel-container">
                 <div class="hero__carousel-slides">
@@ -113,7 +109,6 @@
                         <br>
                         <button class="knap knap--sekundaer2">Se mere</button>
                     </div>
-
                     <!-- Slide 2 - Tilføj dine billeder her -->
                     <div class="hero__kort hero__slide">
                         <img src="images/genbrug-gdt.jpg" alt="Genbrug">
@@ -124,7 +119,6 @@
                         <br>
                         <button class="knap knap--sekundaer2">Læs mere</button>
                     </div>
-
                     <!-- Slide 3 -->
                     <div class="hero__kort hero__slide">
                         <img src="images/flygtninge-gdt.jpg" alt="Flygtninge">
@@ -136,11 +130,9 @@
                         <button class="knap knap--sekundaer2">Bliv frivillig</button>
                     </div>
                 </div>
-
                 <!-- Navigationsknapper -->
                 <button class="hero__nav hero__nav--prev" aria-label="Forrige billede">❮</button>
                 <button class="hero__nav hero__nav--next" aria-label="Næste billede">❯</button>
-
                 <!-- Indikatorprikker -->
                 <div class="hero__dots"></div>
             </div>
@@ -148,7 +140,6 @@
     </main>
 
     <!-- Footer -->
-
     <footer>
         <nav class="nav">
             <a href="main.html">
@@ -216,6 +207,5 @@
     </div>
     <script src="js/filtrering.js" defer></script>
 </body>
-
 
 </html>
