@@ -847,11 +847,7 @@ main {
   }
 
   .form__bund {
-<<<<<<< HEAD
     position: relative;
-=======
-    margin-bottom: 0cap;
->>>>>>> e3a02a12bc9961c16197d896dc03164bb16dde93
     margin-bottom: 24px;
     display: flex;
     justify-content: center;
