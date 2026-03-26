@@ -650,6 +650,7 @@ main {
 ul {
   list-style-type: disc;
   padding: 10;
+  font-size: var(--font-body);
 }
 
 /*------------------ Carousel tilføjeæser ----------------------- */
