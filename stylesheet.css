@@ -845,8 +845,8 @@ main {
     padding: 12px;
   }
 
- .form__bund {
-    margin-top: auto;
+  .form__bund {
+    margin-bottom: 0cap;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;
