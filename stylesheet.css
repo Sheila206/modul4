@@ -781,7 +781,11 @@ ul {
     display: block;
     content: url("images/logo.svg");
   }
-
+  /* undersider projekt valgt logo*/
+  .page-projektervalg .hero__logo {
+    display: block;
+    content: url("images/logo-hvid.svg");
+  }
   .hero__kort {
     height: 400px;
   }
@@ -847,9 +851,11 @@ ul {
   }
 
   .knap--primaer {
-    width: 40%;
-    margin: 0 auto;
-    padding: 12px;
+  display: block;
+  width: fit-content;
+  margin: 40px auto;
+  padding: 12px 24px;
+  white-space: nowrap;
   }
 
   .form__bund {
