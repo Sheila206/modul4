@@ -299,6 +299,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 60px;
+  z-index: 500;
 }
 
 .nav__menu {
