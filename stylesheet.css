@@ -91,10 +91,12 @@ p {
   width: 50%;
   border: 1px solid var(--color-background);
 }
+
 .knap span {
   font-size: 20px;
   font-weight: bold;
 }
+
 /* LAYOUT */
 /* begrænser bredden så det ligner mobil */
 main {
@@ -244,8 +246,9 @@ main {
   padding: 10px;
   bottom: 20px;
 }
+
 .page-home .form__bund,
-.page-kalender .form__bund, 
+.page-kalender .form__bund,
 .page-profil .form__bund,
 .page-projekter .form__bund {
   position: fixed;
@@ -498,18 +501,20 @@ main {
 .filter__actions .knap {
   flex: 1;
 }
+
 /*kalender side*/
 .kalender__billede {
   width: 100%;
   max-width: 400px;
   height: auto;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
   border: 8px solid;
   border-color: #FEF1f1;
   border-radius: var(--radius);
 
 }
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -529,9 +534,10 @@ main {
 
   z-index: 2000;
 }
+
 /*log indside*/
 .page-logind .hero__logo,
-.page-opretbruger .hero__logo  {
+.page-opretbruger .hero__logo {
   display: block;
   width: 220px;
 }
@@ -546,6 +552,7 @@ main {
   max-width: 300px;
   text-align: center;
 }
+
 /*----------------------------Dropdown---------------------------*/
 .dropdown-header {
   width: 100%;
@@ -791,6 +798,12 @@ main {
     margin-top: var(--space-s);
   }
 
+  .knap--primaer {
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
   .form__bund {
     position: fixed;
     margin-bottom: 24px;
@@ -798,19 +811,16 @@ main {
     justify-content: center;
   }
 
-  .knap--primaer {
-    width: 100%;
-    max-width: 400px;
-  }
   /*kalender side*/
-    .kalender__billede {
+  .kalender__billede {
     max-width: 500px;
   }
 }
 
 /*desktop og stor tablet*/
 @media (min-width: 1024px) {
-    /* skjul alle logo */
+
+  /* skjul alle logo */
   .hero__logo {
     display: none;
   }
@@ -820,7 +830,8 @@ main {
     display: block;
     width: 320px;
   }
-   /* undersider logo*/
+
+  /* undersider logo*/
   .page-kalender .hero__logo,
   .page-profil .hero__logo,
   .page-projekter .hero__logo {
@@ -909,7 +920,13 @@ main {
     padding: 0 var(--space-2);
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: var(--nav-height)
+  }
+
+  .page-home main,
+  .page-kalender main,
+  .page-profil main,
+  .page-projekter main {
+    padding-top: var(--nav-height);
   }
 
 
@@ -975,11 +992,37 @@ main {
 
   /* SPACING */
 
-  .sektion {
-    margin-bottom: 80px;
-  }
-    /*kalender side*/
-    .kalender__billede {
+  .page-logind .sektion,
+  .page-opretbruger .sektion {
     max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .knap--primaer {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*kalender side*/
+  .kalender__billede {
+    max-width: 600px;
+  }
+
+  .form__bund {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .form__bund {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: static;
   }
 }
