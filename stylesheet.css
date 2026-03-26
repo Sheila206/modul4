@@ -11,6 +11,7 @@
   --color-text-white: #FDFDFD;
   --color-background: #fdfdfd;
   --color-headerbg: #FDFDFD;
+  --color-dropdown1: #EDEDED;
 
   /* spacing */
   --space-0: 0;
@@ -552,10 +553,26 @@ main {
   max-width: 300px;
   text-align: center;
 }
+/*----------------Status-Og-Data----------------*/
+.SOD{
+
+}
 
 /*----------------------------Dropdown---------------------------*/
 .dropdown-header {
   width: 100%;
+  padding: var(--space-m);
+  background: var(--color-dropdown1);
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-body);
+}
+
+.dropdown-header1 {
+    width: 100%;
   padding: var(--space-m);
   background: var(--color-headerbg);
   border: none;
