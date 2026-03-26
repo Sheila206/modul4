@@ -11,7 +11,7 @@
   --color-text-white: #FDFDFD;
   --color-background: #fdfdfd;
   --color-headerbg: #FDFDFD;
-  --color-dropdown1: #EDEDED;
+  --color-down1: #EDEDED;
 
   /* spacing */
   --space-0: 0;
@@ -543,9 +543,6 @@ main {
   width: 220px;
 }
 
-
-
-
 .modal__box {
   background: white;
   padding: 24px;
@@ -553,9 +550,10 @@ main {
   max-width: 300px;
   text-align: center;
 }
+
 /*----------------Status-Og-Data----------------*/
 .data{
-  background: (--color-dropdown1);
+  background: var(--color-down1);
   border: 1px solid var(--color-dropdown1);
   border-radius: 10px;
   color: var(--color-text);
@@ -566,11 +564,29 @@ main {
   align-self: center;
 }
 
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.stat {
+  background: var(--color-down1);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tal {
+  font-size: 28px;
+  font-weight: bold;
+}
+
 /*----------------------------Dropdown---------------------------*/
 .dropdown-header {
   width: 100%;
   padding: var(--space-m);
-  background: var(--color-dropdown1);
+  background: (--color-down1);
   border: none;
   text-align: left;
   display: flex;
@@ -594,7 +610,7 @@ main {
 .dropdown-header2 {
   width: 100%;
   padding: var(--space-m);
-  background: var(--color-headerbg);
+  background: (--color-headerbg);
   border: none;
   text-align: left;
   display: flex;
@@ -829,8 +845,8 @@ main {
     padding: 12px;
   }
 
-  .form__bund {
-    position: fixed;
+ .form__bund {
+    margin-top: auto;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;

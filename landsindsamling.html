@@ -9,7 +9,7 @@
     <title>Røde Kors</title>
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="js/dropdown-tekst.js"></script>
+    <script src="js/dropdown-tekst.js" defer></script>
     <!-- java script til carousel -->
     <script src="js/billede-carousel.js" defer> </script>
 </head>
@@ -70,30 +70,35 @@
         <!--//////////////// CAROUSEL ////////////////-->
 
 
+        <!--Status og Data-->
         <section class="sektion">
             <h2 class="sektion__titel">Status og data</h2>
-            <div class="grid">
-                <h3>Årets indsamling:</h3>
-                <button class="data">
-                    <span>9.382.335 kr.</span>
-                </button>
 
-                <h3>Tid du har hjulpet:</h3>
-                <button class="data">
-                    <span>16t.</span>
-                </button>
+            <div class="stats">
+                <div class="stat">
+                    <p>Årets indsamling i dkk.</p>
+                    <div class="tal">9382335</div>
+                </div>
 
-                <h3>Familier får mad:</h3>
-                <button class="data">
-                    <span>12.493</span>
-                </button>
+                <div class="stat">
+                    <p>Antal timer du har hjulpet:</p>
+                    <div class="tal">16</div>
+                </div>
 
-                <h3>Personer i krise hjulpet:</h3>
-                <button class="data">
-                    <span>523.292</span>
-                </button>
+                <div class="stat">
+                    <p>Antal familier der får mad:</p>
+                    <div class="tal">12493</div>
+                </div>
+
+                <div class="stat">
+                    <p>Antal personer i krise hjulpet:</p>
+                    <div class="tal">523.292</div>
+                </div>
             </div>
+
         </section>
+
+        <!--Dropdown-->
         <section class="sektion">
             <h2 class="sektion__titel">Om frivilligarbejdet</h2>
             <div class="dropdown">
@@ -145,8 +150,8 @@
                     <p>Søndag den 4. oktober</p> <br>
                 </div>
             </div>
-
         </section>
+
         <br><br><br>
         <div class="login">
             <div class="form__bund">
