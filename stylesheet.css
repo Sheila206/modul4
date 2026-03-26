@@ -241,7 +241,8 @@ main {
 }
 
 .form__bund {
-  position: fixed;
+  position: relative;
+  transform: translateY(50%);
   left: 0;
   width: 100%;
   padding: 10px;
@@ -252,7 +253,7 @@ main {
 .page-kalender .form__bund,
 .page-profil .form__bund,
 .page-projekter .form__bund {
-  position: fixed;
+  position: relative;
   bottom: 80px;
   left: 0;
   width: 100%;
@@ -830,7 +831,7 @@ main {
   }
 
   .form__bund {
-    position: fixed;
+    position: relative;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;
