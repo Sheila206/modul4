@@ -647,6 +647,11 @@ main {
   transform: rotate(180deg);
 }
 
+ul {
+  list-style-type: disc;
+  padding: 10;
+}
+
 /*------------------ Carousel tilføjeæser ----------------------- */
 /* CAROUSEL STYLES */
 .hero__carousel-container {
