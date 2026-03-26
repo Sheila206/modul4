@@ -1010,19 +1010,19 @@ main {
   }
 
   .form__bund {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
 
-  .form__bund {
-    margin-top: 40px;
+  .page-projekter .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    position: static;
+    min-height: calc(100vh - var(--nav-height));
+  }
+
+  .page-projekter .login {
+    margin-top: auto;
   }
 }
