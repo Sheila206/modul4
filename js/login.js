@@ -1,5 +1,5 @@
 //[navn] js kode 
-//inspireret af youtube video:"[titel]" [link]
+//inspireret af youtube video:"Login form validation using javascript" https://www.youtube.com/watch?v=NyM4MCX2eIo
 // Brugt AI til hjælp: [Ai], Prompts ligger inde på afleveringsmapppen
 // W3 Schools: 
 
