@@ -1,149 +1,142 @@
 //Jamies js kode 
-//inspireret af youtube video:"[titel]" [link]
 // Brugt AI til hjælp: DeepSeek AI, Prompts ligger inde på afleveringsmapppen
-// W3 Schools: 
-//Carousel klassen
-class Carousel {
-    constructor(container) {
-        this.container = container;
-        this.slides = Array.from(container.querySelectorAll('.hero__slide'));
-        this.prevBtn = container.querySelector('.hero__nav--prev');
-        this.nextBtn = container.querySelector('.hero__nav--next');
-        this.dotsContainer = container.querySelector('.hero__dots');
-        
-        this.currentIndex = 0;
-        this.interval = null;
-        this.intervalTime = 3000; // tid
-        
-        this.init();
+// W3 Schools er brugt til at forstå og huske ord fra AI svar: this, constructor, Carousel Example, Carousel Options, JavaScript Booleans, HTML DOM Element classList
+
+
+
+// Nye karrusel
+
+// Variabler
+let slides = [];
+let currentIndex = 0;
+let autoInterval = null;
+const intervalTid = 4000;
+
+// DOM
+let container, prevBtn, nextBtn, dotsContainer;
+
+// prikkerne der bliver lavet
+function createDots() {
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('hero__dot');
+        dot.addEventListener('click', function() { goToSlide(i); });
+        dotsContainer.appendChild(dot);
     }
-    
-    init() {
-        // Opret indikatorprikker
-        this.createDots();
-        
-        // Opdater visning
-        this.updateSlides();
-        
-        // Start automatisk skift
-        this.startAutoSlide();
-        
-        // Tilføjer event listeners
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        // Stop auto-slide når musen er over carousel
-        this.container.addEventListener('mouseenter', () => this.stopAutoSlide());
-        this.container.addEventListener('mouseleave', () => this.startAutoSlide());
-        
-        // Touch support til mobil
-        this.setupTouchEvents();
-    }
-    
-    createDots() {
-        this.slides.forEach((_, index) => {
-            const dot = document.createElement('div');
-            dot.classList.add('hero__dot');
-            dot.addEventListener('click', () => this.goToSlide(index));
-            this.dotsContainer.appendChild(dot);
-        });
-    }
-    
-    updateDots() {
-        const dots = this.dotsContainer.querySelectorAll('.hero__dot');
-        dots.forEach((dot, index) => {
-            if (index === this.currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-    
-    updateSlides() {
-        // Skjuler alle slides
-        this.slides.forEach(slide => {
-            slide.classList.remove('active');
-        });
-        
-        // Vis detnuværende slide
-        this.slides[this.currentIndex].classList.add('active');
-        
-        // Opdaterer dots
-        this.updateDots();
-    }
-    
-    nextSlide() {
-        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-        this.updateSlides();
-        this.resetAutoSlide();
-    }
-    
-    prevSlide() {
-        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-        this.updateSlides();
-        this.resetAutoSlide();
-    }
-    
-    goToSlide(index) {
-        this.currentIndex = index;
-        this.updateSlides();
-        this.resetAutoSlide();
-    }
-    
-    startAutoSlide() {
-        if (this.interval) return;
-        this.interval = setInterval(() => {
-            this.nextSlide();
-        }, this.intervalTime);
-    }
-    
-    stopAutoSlide() {
-        if (this.interval) {
-            clearInterval(this.interval);
-            this.interval = null;
-        }
-    }
-    
-    resetAutoSlide() {
-        this.stopAutoSlide();
-        this.startAutoSlide();
-    }
-    
-    setupTouchEvents() {
-        let touchStartX = 0;
-        let touchEndX = 0;
-        
-        this.container.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-        
-        this.container.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            this.handleSwipe(touchStartX, touchEndX);
-        });
-    }
-    
-    handleSwipe(start, end) {
-        const swipeThreshold = 50;
-        const diff = start - end;
-        
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                // Swipe venstre
-                this.nextSlide();
-            } else {
-                // Swipe til højre
-                this.prevSlide();
-            }
+}
+
+// Opdaterer prikker (markerer aktiv)
+function updateDots() {
+    const dots = dotsContainer.querySelectorAll('.hero__dot');
+    for (let i = 0; i < dots.length; i++) {
+        if (i === currentIndex) {
+            dots[i].classList.add('active');
+        } else {
+            dots[i].classList.remove('active');
         }
     }
 }
 
-// Initialiser carousel når DOM er loaded
-document.addEventListener('DOMContentLoaded', () => {
-    const carouselContainer = document.querySelector('.hero__carousel-container');
-    if (carouselContainer) {
-        new Carousel(carouselContainer);
+// Opdaterer slides for at vise det aktive slide synlighed ^
+function updateSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
     }
-});
+    slides[currentIndex].classList.add('active');
+    updateDots();
+}
+
+// det næste slide -----
+function nextSlide() {
+    if (currentIndex + 1 >= slides.length) {
+        currentIndex = 0;
+    } else {
+        currentIndex = currentIndex + 1;
+    }
+    updateSlides();
+    resetAutoSlide();
+}
+
+// Forrige slide -----
+function prevSlide() {
+    if (currentIndex - 1 < 0) {
+        currentIndex = slides.length - 1;
+    } else {
+        currentIndex = currentIndex - 1;
+    }
+    updateSlides();
+    resetAutoSlide();
+}
+
+// Går til bestemt slide
+function goToSlide(index) {
+    currentIndex = index;
+    updateSlides();
+    resetAutoSlide();
+}
+
+// Automatiske skift
+function startAutoSlide() {
+    if (autoInterval !== null) return;
+    autoInterval = setInterval(nextSlide, intervalTid);
+}
+
+function stopAutoSlide() {
+    if (autoInterval !== null) {
+        clearInterval(autoInterval);
+        autoInterval = null;
+    }
+}
+
+function resetAutoSlide() {
+    stopAutoSlide();
+    startAutoSlide();
+}
+
+// touch og swipe til mobil
+function setupTouchEvents() {
+    let touchStartX = 0;
+    
+    container.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    container.addEventListener('touchend', function(e) {
+        const touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    });
+}
+
+// Starter det hele
+function startCarousel() {
+    container = document.querySelector('.hero__carousel-container');
+    if (!container) return;
+    
+    slides = Array.from(container.querySelectorAll('.hero__slide'));
+    prevBtn = container.querySelector('.hero__nav--prev');
+    nextBtn = container.querySelector('.hero__nav--next');
+    dotsContainer = container.querySelector('.hero__dots');
+    
+    createDots();
+    updateSlides();
+    startAutoSlide();
+    
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    container.addEventListener('mouseenter', stopAutoSlide);
+    container.addEventListener('mouseleave', startAutoSlide);
+    
+    setupTouchEvents();
+}
+
+// Vent på siden indlæses
+document.addEventListener('DOMContentLoaded', startCarousel);
